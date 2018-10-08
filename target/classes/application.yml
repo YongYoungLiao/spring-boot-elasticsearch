@@ -1,0 +1,16 @@
+server:
+  port: 10050
+
+spring:
+  application:
+    name: alfred-es-server
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 192.168.40.100:9300
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.40.100:10011/eureka/
